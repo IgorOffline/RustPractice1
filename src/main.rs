@@ -93,6 +93,7 @@ async fn main() {
                 }
             }
         }
+
         draw_texture_ex(
             &texture_hand,
             row_col_start + (selected_square.col as f32 * row_col_offset) - 15.0,
@@ -103,6 +104,7 @@ async fn main() {
                 ..Default::default()
             },
         );
+
         next_frame().await
     }
 }
